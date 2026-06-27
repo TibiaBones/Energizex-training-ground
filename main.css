@@ -29,6 +29,10 @@ body{
     box-sizing: border-box;
 }
 
+.logo{
+    margin-right: 20px;
+}
+
 .panelContainer{
     max-width: 603px;
     width: 100%;
@@ -45,6 +49,10 @@ body{
     font-weight: 600;
     display: flex;
     align-items: center;
+}
+
+.accountCintainerMiddleDevice{
+    display: none;
 }
 
 .panelSvgLeftMargin{
@@ -669,4 +677,33 @@ body{
 
 .displayNone{
     display: none;
+}
+
+
+@media (max-width: 1440px) {
+    .header{
+        padding: 0 60px;
+    }
+
+    .panelContainer{
+        max-width: 392px;
+    }
+
+    .searchContainer{
+        display: none;
+    }
+    .displayNoneResp{
+        display: none;
+    }
+
+    .accountCintainerMiddleDevice{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .searchMiddleDevice{
+        height: 28px;
+    }
 }
