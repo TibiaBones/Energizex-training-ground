@@ -124,7 +124,7 @@ body{
 
 
 .categories{
-    height: 382px;
+    /* height: 382px; */
     max-width: 1400px;
     width: 100%;
     background-color: var(--white);
@@ -159,9 +159,12 @@ body{
     font-weight: 500;
 }
 
-.categoriesLinksContainer{
+
+
+/* переписать на гридах т.к. будет нужна корректная адаптивка  */
+.categoriesLinksContainer{ 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
 }
@@ -729,5 +732,28 @@ body{
         height: 270px;
         max-width: 624px;
         width: 100%;
+    }
+
+    .categories{
+        height: 474px;
+        max-width: 700px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 30px 38px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 32px;
+    }
+
+    /* вот тут будет нужна корректная адаптивка  */
+    .categoriesLinksContainer{
+        flex-wrap: wrap;
+        gap: 48px;
+    }
+
+    .categoriesLinkImg{
+        width: 120px;
+        height: 120px;
     }
 }
