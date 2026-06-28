@@ -90,17 +90,21 @@ body{
 }
 
 .banner{
-    width: 100%;
+    max-width: 100%;
     height: 600px;
     padding: 50px 0;
     box-sizing: border-box;
+    display: flex;
+        align-items: center;
+        justify-content: center;
 }
 
 .bannerImgLink{
     display: block;
-    width: 1200px;
+    width: 100%;
+    width: 100%;
     height: 500px;
-    margin: 0 auto;
+    border-radius: 4px;
     box-shadow: 
         0 2px 1px rgba(0,0,0,0.09),
         0 4px 2px rgba(0,0,0,0.09),
@@ -110,7 +114,8 @@ body{
 }
 
 .bannerImg{
-    width: 1200px;
+    width: 100%;
+    width: 100%;
     height: 500px;
     object-fit: cover;
     border-radius: 4px;
@@ -705,5 +710,24 @@ body{
 
     .searchMiddleDevice{
         height: 28px;
+    }
+
+    .banner{
+        width: 100%;
+        height: 340px;
+        padding: 25px 0;
+        
+    }
+
+    .bannerImgLink{
+        height: 270px;
+        width: 624px;
+
+    }
+
+    .bannerImg{
+        height: 270px;
+        max-width: 624px;
+        width: 100%;
     }
 }
