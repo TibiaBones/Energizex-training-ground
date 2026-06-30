@@ -161,12 +161,13 @@ body{
 
 
 
-/* переписать на гридах т.к. будет нужна корректная адаптивка  */
+/* переписать на гридах т.к. будет нужна корректная адаптивка(мб и флексами обойдемся)  */
 .categoriesLinksContainer{ 
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    column-gap: 39px;
 }
 
 .categoriesLink{
@@ -746,10 +747,11 @@ body{
         gap: 32px;
     }
 
-    /* вот тут будет нужна корректная адаптивка  */
+    /* вот тут будет нужна корректная адаптивка(мб на гридах)  */
     .categoriesLinksContainer{
         flex-wrap: wrap;
-        gap: 48px;
+        column-gap: 48px;
+        row-gap: 24px;
     }
 
     .categoriesLinkImg{
