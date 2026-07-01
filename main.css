@@ -747,6 +747,10 @@ body{
         gap: 32px;
     }
 
+    .shopTitleText{
+        font-size: 24px;
+    }
+
     /* вот тут будет нужна корректная адаптивка(мб на гридах)  */
     .categoriesLinksContainer{
         flex-wrap: wrap;
@@ -757,5 +761,11 @@ body{
     .categoriesLinkImg{
         width: 120px;
         height: 120px;
+    }
+
+    .shopContainer{
+        max-width: 700px;
+        width: 100%;
+        padding: 30px 38px;
     }
 }
