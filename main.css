@@ -768,4 +768,39 @@ body{
         width: 100%;
         padding: 30px 38px;
     }
+
+    .cardContainer{
+        height: 357px;
+        width: 200px;
+    }
+
+    .cardTagDiscountLikePanel{
+        gap: 39px;
+    }
+
+    .cardTagDiscountContainer{
+        grid-template-columns: 97px;
+    }
+
+    .cardTag{
+        width: 97px;
+        font-size: 11px;
+    }
+
+    .cardDiscount{
+        width: 36px;
+        height: 36px;
+        font-size: 12px;
+    }
+
+    .cardImgContainer{
+        height: 247px;
+        width: 200px;
+        padding: 34.5px 25px 32.5px 25px;
+    }
+
+    .cardImg{
+        height: 180px;
+        width: 150px;    
+    }
 }
