@@ -803,4 +803,54 @@ body{
         height: 180px;
         width: 150px;    
     }
+
+    .offer{
+        height: 320px;
+        max-width: 744px;
+        width: 100%;
+    }
+
+    /* зарезиновить картинку  */
+    .offerImg{
+        width: 400px;
+        height: 320px;
+        object-fit: cover;
+    }
+
+    .offerInfo{
+        padding: 0 50px 0 32px;
+        width: 100%;
+        height: 320px;
+        gap: 8px;
+    }
+
+    .offerText{
+        gap: 8px;
+    }
+
+    .offerTitle{
+        font-size: 14px;
+    }
+
+    .offerMainInfo{
+        font-size: 30px;
+    }
+
+    .offerSecInfo{
+        font-size: 12px;
+    }
+
+    .offerTimerTitle{
+        font-size: 14px;
+    }
+
+    /* на подписях к таймеру есть проблема - подписи под цифрами таймера сместились. нужно будет переверстать полностью верстку таймера, ибо трабл не решить быстро, тут переписывать нужно */
+    .offerTimerNum{
+        font-size: 24px;
+    }
+
+    .offerTimerElementBackground{
+        height: 40px;
+        width: 40px;
+    }
 }
