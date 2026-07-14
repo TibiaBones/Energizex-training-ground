@@ -853,4 +853,38 @@ body{
         height: 40px;
         width: 40px;
     }
+
+    .connectWithUsCont{
+        box-sizing: border-box;
+        padding: 50px 60px;
+        max-width: 744px;
+    }
+
+    .connectLinkContainer{
+        width: 214px;
+    }
+
+    .connectLinkSvg{
+        height: 50px;
+        width: 50px;
+        border-radius: 16px;
+    }
+
+    .size25_25{
+        width: 25px;
+        height: 25px;
+    }
+
+    .size13_25{
+        width: 13px;
+        height: 25px;
+    }
+
+    .size25_20{
+        width: 25px;
+        height: 20px;
+    }
 }
+
+
+
