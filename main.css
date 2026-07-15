@@ -884,6 +884,17 @@ body{
         width: 25px;
         height: 20px;
     }
+
+
+    /* обнаружена проблема с шириной блока с формами оплаты и линией*/
+    .footer{
+        height: 435px;
+        max-width: 744px;
+        width: 100%;
+        padding: 40px 46px;
+    }
+
+    
 }
 
 
