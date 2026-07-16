@@ -886,7 +886,7 @@ body{
     }
 
 
-    /* обнаружена проблема с шириной блока с формами оплаты и линией*/
+    /* есть нюанс с адаптивностью футтера, но возможно так и было задумано дизайнером*/
     .footer{
         height: 435px;
         max-width: 744px;
@@ -894,7 +894,24 @@ body{
         padding: 40px 46px;
     }
 
+    .footerContent{
+        grid-template-columns: 183px 110px 108px 160px;
+        max-width: 651px;
+        gap: 28px;
+    }
+
+    .footerTitle{
+        font-size: 22px;
+    }
+
+    .footerTitleText{
+        font-size: 13px;
+    }
     
+
+    .footerLine{
+        width: 651px; 
+    }
 }
 
 
