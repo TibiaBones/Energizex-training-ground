@@ -701,18 +701,19 @@ body{
     .searchContainer{
         display: none;
     }
-    .displayNoneResp{
+
+    .displayNoneResp1440{
         display: none;
     }
 
-    .accountCintainerMiddleDevice{
+    .accountCintainerSmallDevice{
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
     }
 
-    .searchMiddleDevice{
+    .searchSmallDevice{
         height: 28px;
     }
 
@@ -912,6 +913,26 @@ body{
     .footerLine{
         width: 651px; 
     }
+}
+
+@media (max-width: 745px) {
+    .header{
+        padding: 0 24px;
+    }
+
+    .displayNoneResp745{
+        display: none;
+    }
+
+    .panelContainer{
+        max-width: 120px;
+    }
+
+    .accountCintainerSmallDevice{
+        gap: 16px;
+    }
+
+    /* нужно в хеддер добавить бургер-меню, ну или хотя бы иконку */
 }
 
 
