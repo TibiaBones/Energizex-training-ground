@@ -933,6 +933,27 @@ body{
     }
 
     /* нужно в хеддер добавить бургер-меню, ну или хотя бы иконку */
+
+    .banner {
+        width: 100%;
+        height: 176px;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+
+    /* посмотреть варианты решения проблемы с обрезанием фотки */
+
+    .bannerImgLink {
+        height: 156px;
+        width: 327px;
+    }
+
+    .bannerImg {
+        height: 156px;
+        max-width: 327px;
+        width: 100%;
+    }
+
 }
 
 
