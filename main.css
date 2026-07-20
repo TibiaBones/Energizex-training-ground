@@ -51,7 +51,7 @@ body{
     align-items: center;
 }
 
-.accountCintainerMiddleDevice{
+.accountContainerSmallDevice{
     display: none;
 }
 
@@ -706,7 +706,7 @@ body{
         display: none;
     }
 
-    .accountCintainerSmallDevice{
+    .accountContainerSmallDevice{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -928,7 +928,7 @@ body{
         max-width: 120px;
     }
 
-    .accountCintainerSmallDevice{
+    .accountContainerSmallDevice{
         gap: 16px;
     }
 
