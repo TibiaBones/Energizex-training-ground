@@ -954,6 +954,35 @@ body{
         width: 100%;
     }
 
+    
+
+    .categories{
+        padding: 20px 23px;
+        height: 606px;
+        max-width: 372px;
+        width: 100%;
+        gap: 24px;
+    }
+
+    .shopTitleContainer{
+        height: 30px;
+        padding: 0;
+    }
+
+    .greenLine{
+        height: 25px;
+    }
+
+    .shopTitleText{
+        font-size: 18px;
+    }
+
+    .categoriesLinksContainer {
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 24px;
+    }
 }
 
 
