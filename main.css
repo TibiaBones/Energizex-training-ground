@@ -805,6 +805,10 @@ body{
         width: 150px;    
     }
 
+    .cardName{
+        font-size: 15px;
+    }
+
     .offer{
         height: 320px;
         max-width: 744px;
@@ -997,7 +1001,65 @@ body{
 
     /* пока что навигация по товарам остается такой */
 
+    .cardContainer{
+        height: 272px;
+        width: 150px;
+        gap: 4px;
+    }
 
+    .cardTagDiscountLikePanel{
+        gap: 25px;
+        padding: 8px 8px 0 8px;
+    }
+
+    .cardTagDiscountContainer{
+        grid-template-columns: 85px;
+    }
+
+    .cardDiscount{
+        width: 30px;
+        height: 30px;
+        font-size: 9px;
+    }
+
+    .cardLike {
+        height: 24px;
+        width: 24px;
+    }
+
+
+    .cardTag{
+        height: 24px;
+        width: 85px;
+    }
+
+    .cardImgContainer{
+        height: 200px;
+        width: 150px;
+        padding: 29px 15px;
+    }
+
+    .cardImg{
+        height: 140px;
+        width: 120px;
+    }
+
+    .cardInfoContainer{
+        gap: 2px;
+    }
+
+    .cardName {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .cardCurrentPrice{
+        font-size: 10px;
+    }
+
+    .cardOriginalPrise{
+        font-size: 10px;
+    }
 }
 
 
