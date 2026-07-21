@@ -966,7 +966,7 @@ body{
 
     .shopTitleContainer{
         height: 30px;
-        padding: 0;
+        padding: 0 0 0 13px;
     }
 
     .greenLine{
@@ -983,6 +983,21 @@ body{
         column-gap: 30px;
         row-gap: 24px;
     }
+
+    .shopContainer{
+        padding: 20px 23px;
+        height: 696px;
+        width: 373px;
+        gap: 24px;
+    }
+
+    .shopNavigationLink{
+        font-size: 14px;
+    }
+
+    /* пока что навигация по товарам остается такой */
+
+
 }
 
 
