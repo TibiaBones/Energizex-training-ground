@@ -824,7 +824,6 @@ body{
 
     .offerInfo{
         padding: 0 50px 0 32px;
-        width: 100%;
         height: 320px;
         gap: 8px;
     }
@@ -1059,6 +1058,24 @@ body{
 
     .cardOriginalPrise{
         font-size: 10px;
+    }
+
+    .offer{
+        height: 640px;
+        max-width: 375px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .offerImg{
+        max-width: 375px;
+        width: 100%;
+        height: 320px;
+    }
+
+    .offerInfo{
+        padding: 0 50px;
+        box-sizing: border-box;
     }
 }
 
