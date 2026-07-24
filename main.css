@@ -1079,9 +1079,18 @@ body{
     
     .connectWithUsCont{
         flex-direction: column;
+        justify-content: center;
         gap: 35px;
         padding: 30px 12px;
         width: 375px;
+    }
+
+    .connectHelpPanel{
+        width: 327px;
+    }
+
+    .connectHelpButton{
+        margin-left: 18px;
     }
 }
 
