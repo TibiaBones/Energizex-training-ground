@@ -471,7 +471,6 @@ body{
 }
 
 .connectWithUsCont{
-    height: 336px;
     max-width: 1439px;
     width: 100%;
     background-color: var(--white);
@@ -1076,6 +1075,13 @@ body{
     .offerInfo{
         padding: 0 50px;
         box-sizing: border-box;
+    }
+    
+    .connectWithUsCont{
+        flex-direction: column;
+        gap: 35px;
+        padding: 30px 12px;
+        width: 375px;
     }
 }
 
