@@ -563,7 +563,6 @@ body{
 .footer{
     margin: 0 auto;
     padding: 62px 140px;
-    height: 511px;
     max-width: 1439px;
     width: 100%;
     color: var(--white);
@@ -612,6 +611,7 @@ body{
 .footerLinksTitle{
     font-size: 16px;
     font-weight: 700;
+    line-height: 24px;
 }
 
 .footerLinksContainer{
@@ -624,6 +624,7 @@ body{
 .footerLink{
     text-decoration: none;
     color: var(--white);
+    line-height: 22px;
 }
 
 .footerLinksAddressContainer{
@@ -891,7 +892,6 @@ body{
 
     /* есть нюанс с адаптивностью футтера, но возможно так и было задумано дизайнером*/
     .footer{
-        height: 435px;
         max-width: 744px;
         width: 100%;
         padding: 40px 46px;
@@ -1091,6 +1091,39 @@ body{
 
     .connectHelpButton{
         margin-left: 18px;
+    }
+
+    .footer{
+        max-width: 375px;
+        width: 100%;
+        padding: 30px 24px;
+        gap: 16px;
+    }
+
+    .footerContent{
+        grid-template-columns: 1fr;
+    }
+
+    .footerTitle{
+        font-size: 20px;
+    }
+
+    .footerLine{
+        width: 327px;
+    }
+
+    .footerCopyrightContent {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+        margin: 24px 0;
+        max-width: 327px;
+    }
+
+    .footerPaymentMethods{
+        gap: 4.8px;
     }
 }
 
