@@ -636,6 +636,19 @@ body{
 
 .footerLinksAddress{
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    align-content: start;
+}
+
+.footerLinksAddressStr{
+    margin: 0;
+    line-height: 22px;
+}
+
+.footerLinksPhoneNumber{
+    margin: 0;
 }
 
 .fontSize14px{
@@ -685,6 +698,10 @@ body{
 }
 
 .displayNone{
+    display: none;
+}
+
+.fLdisplayNone{
     display: none;
 }
 
@@ -910,7 +927,10 @@ body{
     .footerTitleText{
         font-size: 13px;
     }
-    
+
+    .footerLinksContainer{
+        gap: 8px;
+    }
 
     .footerLine{
         width: 651px; 
@@ -955,8 +975,6 @@ body{
         max-width: 327px;
         width: 100%;
     }
-
-    
 
     .categories{
         padding: 20px 23px;
@@ -1097,15 +1115,37 @@ body{
         max-width: 375px;
         width: 100%;
         padding: 30px 24px;
-        gap: 16px;
+        gap: 40px;
     }
 
     .footerContent{
         grid-template-columns: 1fr;
+        gap: 24px;
     }
 
     .footerTitle{
         font-size: 20px;
+    }
+
+    .footerTitleContainer{
+        gap: 16px;
+    }
+
+    .footerTitleText{
+        margin-bottom: 8px;
+        line-height: 28px;
+    }
+
+    .footerLinksGridContainer{
+        gap: 16px;
+    }
+
+    .footerLinksContainer{
+        gap: 8px;
+    }
+
+    .footerLinksAddressContainer{
+        gap: 8px;
     }
 
     .footerLine{
@@ -1125,7 +1165,18 @@ body{
     .footerPaymentMethods{
         gap: 4.8px;
     }
+
+    .marginBot24{
+        margin-bottom: 24px;
+    }
+
+    .fLdisplayNone{
+        display: block;
+    }
+    /* тут нужно будет доделать скрытие и открытие разделов по нажатию на стрелочки  */
 }
+
+    
 
 
 
