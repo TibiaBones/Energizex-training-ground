@@ -10,14 +10,14 @@
     --accent-red: #CB4138;
 }
 
-body{
+body {
     background-color: var(--frame-backgorund-colors-1);
     margin: 0;
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
 }
 
-.header{
+.header {
     padding: 0 120px;
     background-color: var(--nav-white);
     width: 100%;
@@ -29,11 +29,11 @@ body{
     box-sizing: border-box;
 }
 
-.logo{
+.logo {
     margin-right: 20px;
 }
 
-.panelContainer{
+.panelContainer {
     max-width: 603px;
     width: 100%;
     height: 32px;
@@ -42,7 +42,7 @@ body{
     align-items: center;
 }
 
-.panelLink{
+.panelLink {
     text-decoration: none;
     color: var(--text-color);
     font-size: 14px;
@@ -51,19 +51,19 @@ body{
     align-items: center;
 }
 
-.accountContainerSmallDevice{
+.accountContainerSmallDevice {
     display: none;
 }
 
-.panelSvgLeftMargin{
+.panelSvgLeftMargin {
     margin-left: 6px;
 }
 
-.searchContainer{
+.searchContainer {
     position: relative;
 }
 
-.searchIcon{
+.searchIcon {
     position: absolute;
     left: 10px;
     top: 50%;
@@ -71,7 +71,7 @@ body{
     pointer-events: none;
 }
 
-.searchInput{
+.searchInput {
     height: 30px;
     max-width: 177px;
     min-width: 100px;
@@ -81,7 +81,7 @@ body{
     padding-left: 33px;
 }
 
-.mainContainer{
+.mainContainer {
     margin: 25px 0;
     display: grid;
     grid-template-columns: 1fr;
@@ -89,31 +89,31 @@ body{
     gap: 25px;
 }
 
-.banner{
+.banner {
     max-width: 100%;
     height: 600px;
     padding: 50px 0;
     box-sizing: border-box;
     display: flex;
-        align-items: center;
-        justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.bannerImgLink{
+.bannerImgLink {
     display: block;
     width: 100%;
     width: 100%;
     height: 500px;
     border-radius: 4px;
-    box-shadow: 
-        0 2px 1px rgba(0,0,0,0.09),
-        0 4px 2px rgba(0,0,0,0.09),
-        0 8px 4px rgba(0,0,0,0.09),
-        0 16px 8px rgba(0,0,0,0.09),
-        0 32px 16px rgba(0,0,0,0.09);
+    box-shadow:
+        0 2px 1px rgba(0, 0, 0, 0.09),
+        0 4px 2px rgba(0, 0, 0, 0.09),
+        0 8px 4px rgba(0, 0, 0, 0.09),
+        0 16px 8px rgba(0, 0, 0, 0.09),
+        0 32px 16px rgba(0, 0, 0, 0.09);
 }
 
-.bannerImg{
+.bannerImg {
     width: 100%;
     width: 100%;
     height: 500px;
@@ -123,7 +123,7 @@ body{
 
 
 
-.categories{
+.categories {
     /* height: 382px; */
     max-width: 1400px;
     width: 100%;
@@ -136,7 +136,7 @@ body{
     gap: 32px;
 }
 
-.shopTitleContainer{
+.shopTitleContainer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -146,14 +146,14 @@ body{
     box-sizing: border-box;
 }
 
-.greenLine{
+.greenLine {
     height: 33px;
     width: 3px;
     border-radius: 1.5px;
     background-color: var(--button-green);
 }
 
-.shopTitleText{
+.shopTitleText {
     font-size: 28px;
     margin: 0 0 0 16px;
     font-weight: 500;
@@ -162,7 +162,7 @@ body{
 
 
 /* переписать на гридах т.к. будет нужна корректная адаптивка(мб и флексами обойдемся)  */
-.categoriesLinksContainer{ 
+.categoriesLinksContainer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -170,7 +170,7 @@ body{
     column-gap: 39px;
 }
 
-.categoriesLink{
+.categoriesLink {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -181,13 +181,13 @@ body{
     color: var(--text-color);
 }
 
-.categoriesLinkImg{
+.categoriesLinkImg {
     width: 167px;
     height: 167px;
     border-radius: 83.5px;
 }
 
-.shopContainer{
+.shopContainer {
     height: 689px;
     max-width: 1400px;
     width: 100%;
@@ -198,43 +198,69 @@ body{
     grid-template-columns: 1fr;
     align-content: start;
     gap: 32px;
+    position: relative;
 }
 
-.shopNavigation{
+.shopButton {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--button-green);
+    border-width: 0;
+    position: absolute;
+}
+
+.shopButton:hover{
+    cursor: pointer;
+}
+
+.shopButtonPrev{
+    display: none;
+    top: 378px;
+    left: 35px;
+}
+
+.shopButtonNext{
+    top: 378px;
+    right: 35px;
+}
+
+.shopNavigation {
     display: flex;
     justify-content: flex-start;
     gap: 20px;
 }
 
-.shopNavigationLink{
+.shopNavigationLink {
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
     color: var(--black);
 }
 
-.shopNavigationLink:hover{
+.shopNavigationLink:hover {
     color: var(--button-green);
 }
 
-.shopNavigationLink:focus{
-    color: var(--button-green);
-    text-decoration: underline;
-}
-
-.shopNavigationLink:active{
+.shopNavigationLink:focus {
     color: var(--button-green);
     text-decoration: underline;
 }
 
-.shopCardContainers{
+.shopNavigationLink:active {
+    color: var(--button-green);
+    text-decoration: underline;
+}
+
+.shopCardContainers {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 18px;
 }
 
-.cardContainer{
+.cardContainer {
     height: 459px;
     width: 262px;
     display: grid;
@@ -242,7 +268,7 @@ body{
     gap: 12px;
 }
 
-.cardTagDiscountLikePanel{
+.cardTagDiscountLikePanel {
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -251,14 +277,14 @@ body{
     padding: 16px 16px 0 16px;
 }
 
-.cardTagDiscountContainer{
+.cardTagDiscountContainer {
     display: grid;
     grid-template-columns: 129px;
     gap: 8px;
     justify-items: start;
 }
 
-.cardTag{
+.cardTag {
     text-transform: uppercase;
     color: var(--button-green);
     font-size: 16px;
@@ -272,7 +298,7 @@ body{
     border-radius: 4px;
 }
 
-.cardDiscount{
+.cardDiscount {
     width: 43px;
     height: 43px;
     background-color: var(--accent-red);
@@ -285,7 +311,7 @@ body{
     align-items: center;
 }
 
-.cardLike{
+.cardLike {
     height: 32px;
     width: 32px;
     border-radius: 16px;
@@ -298,7 +324,7 @@ body{
     cursor: pointer;
 }
 
-.cardImgContainer{
+.cardImgContainer {
     height: 349px;
     width: 262px;
     border-radius: 24px 24px 0 0;
@@ -307,55 +333,55 @@ body{
     box-sizing: border-box;
 }
 
-.cardImg{
+.cardImg {
     height: 250px;
     width: 200px;
     border-radius: 10px;
     box-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, 0.15);
 }
 
-.cardInfoContainer{
+.cardInfoContainer {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     gap: 4px;
 }
 
-.cardGrade{
+.cardGrade {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 2px;
 }
 
-.cardName{
+.cardName {
     font-size: 16px;
     font-weight: 600;
     line-height: 26px;
     color: var(--text-color);
 }
 
-.cardPriseContainer{
-    
+.cardPriseContainer {
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 14px;
 }
 
-.cardCurrentPrice{
+.cardCurrentPrice {
     font-size: 14px;
     font-weight: 600;
     color: var(--button-green);
 }
 
-.cardOriginalPrise{
+.cardOriginalPrise {
     font-size: 14px;
     font-weight: 600;
     color: var(--accent-red);
 }
 
-.offer{
+.offer {
     height: 532px;
     max-width: 1440px;
     width: 100%;
@@ -364,13 +390,13 @@ body{
     justify-content: center;
 }
 
-.offerImg{
+.offerImg {
     width: 720px;
     height: 532px;
     object-fit: cover;
 }
 
-.offerInfo{
+.offerInfo {
     padding: 0 160px 0 72px;
     width: 100%;
     height: 532px;
@@ -381,7 +407,7 @@ body{
     gap: 24px;
 }
 
-.offerText{
+.offerText {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -389,7 +415,7 @@ body{
     gap: 16px;
 }
 
-.offerTitle{
+.offerTitle {
     text-transform: uppercase;
     color: var(--button-green);
     margin: 0;
@@ -397,46 +423,46 @@ body{
     font-weight: 700;
 }
 
-.offerMainInfo{
+.offerMainInfo {
     color: var(--white);
     font-size: 40px;
     font-weight: 500;
 }
 
-.offerSecInfo{
+.offerSecInfo {
     color: var(--white);
     font-size: 20px;
 }
 
-.offerTimerContainer{
+.offerTimerContainer {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: start;
     gap: 12px;
 }
 
-.offerTimerTitle{
+.offerTimerTitle {
     color: var(--white);
     font-size: 16px;
 }
 
-.offerTimer{
+.offerTimer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.offerTimerElement{
+.offerTimerElement {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
 }
 
-.marginLeft16{
+.marginLeft16 {
     margin-left: 16px;
 }
 
-.offerTimerElementBackground{
+.offerTimerElementBackground {
     height: 60px;
     width: 60px;
     background-color: var(--nav-white);
@@ -446,19 +472,19 @@ body{
     align-items: center;
 }
 
-.offerTimerNum{
+.offerTimerNum {
     font-size: 34px;
     font-weight: 500;
 }
 
-.offerTimerElementLabel{
+.offerTimerElementLabel {
     color: var(--white);
     font-size: 12px;
     line-height: 20px;
     text-align: center;
 }
 
-.offerTimerButton{
+.offerTimerButton {
     box-sizing: border-box;
     height: 40px;
     width: 154px;
@@ -470,7 +496,7 @@ body{
     font-weight: 500;
 }
 
-.connectWithUsCont{
+.connectWithUsCont {
     max-width: 1439px;
     width: 100%;
     background-color: var(--white);
@@ -481,7 +507,7 @@ body{
     align-items: center;
 }
 
-.connectHelpPanel{
+.connectHelpPanel {
     padding-left: 21px;
     height: 236px;
     width: 350px;
@@ -495,20 +521,20 @@ body{
     box-sizing: border-box;
 }
 
-.connectHelpTitle{
+.connectHelpTitle {
     color: var(--white);
     font-size: 20px;
     margin-bottom: 30px;
 }
 
-.connectHelpMail{
+.connectHelpMail {
     color: var(--white);
     font-size: 16px;
     margin-bottom: 16px;
     text-decoration: none;
 }
 
-.connectHelpFaq{
+.connectHelpFaq {
     color: var(--white);
     font-size: 16px;
     margin-bottom: 24px;
@@ -517,7 +543,7 @@ body{
     align-items: center;
 }
 
-.connectHelpButton{
+.connectHelpButton {
     color: var(--button-green);
     height: 40px;
     width: 251px;
@@ -528,7 +554,7 @@ body{
     font-weight: 600;
 }
 
-.connectLink{
+.connectLink {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -536,19 +562,19 @@ body{
     gap: 40px;
 }
 
-.connectLinkTitle{
+.connectLinkTitle {
     font-size: 24px;
     font-weight: 500;
 }
 
-.connectLinkContainer{
+.connectLinkContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 273px;
 }
 
-.connectLinkSvg{
+.connectLinkSvg {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -556,11 +582,11 @@ body{
     width: 77px;
     background-color: var(--white);
     border-radius: 23px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 
 }
 
-.footer{
+.footer {
     margin: 0 auto;
     padding: 62px 140px;
     max-width: 1439px;
@@ -573,27 +599,27 @@ body{
     box-sizing: border-box;
 }
 
-.footerContent{
+.footerContent {
     display: grid;
     grid-template-columns: 556px repeat(3, 160px);
     gap: 41px;
     max-width: 1159px;
 }
 
-.footerTitleContainer{
+.footerTitleContainer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 8px;
     align-content: start;
 }
 
-.footerTitle{
+.footerTitle {
     font-size: 24px;
     font-weight: 500;
     margin: 0;
 }
 
-.footerTitleText{
+.footerTitleText {
     margin: 0;
     max-width: 260px;
     font-size: 15px;
@@ -601,40 +627,40 @@ body{
     line-height: 28px;
 }
 
-.footerLinksGridContainer{
+.footerLinksGridContainer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
     align-content: start;
 }
 
-.footerLinksTitle{
+.footerLinksTitle {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
 }
 
-.footerLinksContainer{
+.footerLinksContainer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
     align-content: start;
 }
 
-.footerLink{
+.footerLink {
     text-decoration: none;
     color: var(--white);
     line-height: 22px;
 }
 
-.footerLinksAddressContainer{
+.footerLinksAddressContainer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
     align-content: start;
 }
 
-.footerLinksAddress{
+.footerLinksAddress {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr;
@@ -642,36 +668,36 @@ body{
     align-content: start;
 }
 
-.footerLinksAddressStr{
+.footerLinksAddressStr {
     margin: 0;
     line-height: 22px;
 }
 
-.footerLinksPhoneNumber{
+.footerLinksPhoneNumber {
     margin: 0;
 }
 
-.fontSize14px{
+.fontSize14px {
     font-size: 14px;
 }
 
-.footerCopyrightContainer{
+.footerCopyrightContainer {
     display: grid;
     grid-template-columns: 1fr;
     align-content: start;
 }
 
-.footerLine{
+.footerLine {
     height: 1px;
     width: 1120px;
     background-color: var(--gray-text);
 }
 
-.footerCopyrightContent_width{
+.footerCopyrightContent_width {
     max-width: 1120px;
 }
 
-.footerCopyrightContent{
+.footerCopyrightContent {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -680,14 +706,14 @@ body{
     max-width: 1120px;
 }
 
-.footerPaymentMethods{
+.footerPaymentMethods {
     display: flex;
     justify-content: center;
     gap: 8px;
     width: 328px;
 }
 
-.footerPaymentMethodsBase{
+.footerPaymentMethodsBase {
     height: 32px;
     width: 48px;
     background-color: var(--white);
@@ -697,63 +723,63 @@ body{
     align-items: center;
 }
 
-.displayNone{
+.displayNone {
     display: none;
 }
 
-.fLdisplayNone{
+.fLdisplayNone {
     display: none;
 }
 
 
 @media (max-width: 1440px) {
-    .header{
+    .header {
         padding: 0 60px;
     }
 
-    .panelContainer{
+    .panelContainer {
         max-width: 392px;
     }
 
-    .searchContainer{
+    .searchContainer {
         display: none;
     }
 
-    .displayNoneResp1440{
+    .displayNoneResp1440 {
         display: none;
     }
 
-    .accountContainerSmallDevice{
+    .accountContainerSmallDevice {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
     }
 
-    .searchSmallDevice{
+    .searchSmallDevice {
         height: 28px;
     }
 
-    .banner{
+    .banner {
         width: 100%;
         height: 340px;
         padding: 25px 0;
-        
+
     }
 
-    .bannerImgLink{
+    .bannerImgLink {
         height: 270px;
         width: 624px;
 
     }
 
-    .bannerImg{
+    .bannerImg {
         height: 270px;
         max-width: 624px;
         width: 100%;
     }
 
-    .categories{
+    .categories {
         height: 474px;
         max-width: 700px;
         width: 100%;
@@ -765,192 +791,192 @@ body{
         gap: 32px;
     }
 
-    .shopTitleText{
+    .shopTitleText {
         font-size: 24px;
     }
 
     /* вот тут будет нужна корректная адаптивка(мб на гридах)  */
-    .categoriesLinksContainer{
+    .categoriesLinksContainer {
         flex-wrap: wrap;
         column-gap: 48px;
         row-gap: 24px;
     }
 
-    .categoriesLinkImg{
+    .categoriesLinkImg {
         width: 120px;
         height: 120px;
     }
 
-    .shopContainer{
+    .shopContainer {
         max-width: 700px;
         width: 100%;
         padding: 30px 38px;
     }
 
-    .cardContainer{
+    .cardContainer {
         height: 357px;
         width: 200px;
     }
 
-    .cardTagDiscountLikePanel{
+    .cardTagDiscountLikePanel {
         gap: 39px;
     }
 
-    .cardTagDiscountContainer{
+    .cardTagDiscountContainer {
         grid-template-columns: 97px;
     }
 
-    .cardTag{
+    .cardTag {
         width: 97px;
         font-size: 11px;
     }
 
-    .cardDiscount{
+    .cardDiscount {
         width: 36px;
         height: 36px;
         font-size: 12px;
     }
 
-    .cardImgContainer{
+    .cardImgContainer {
         height: 247px;
         width: 200px;
         padding: 34.5px 25px 32.5px 25px;
     }
 
-    .cardImg{
+    .cardImg {
         height: 180px;
-        width: 150px;    
+        width: 150px;
     }
 
-    .cardName{
+    .cardName {
         font-size: 15px;
     }
 
-    .offer{
+    .offer {
         height: 320px;
         max-width: 744px;
         width: 100%;
     }
 
     /* зарезиновить картинку  */
-    .offerImg{
+    .offerImg {
         width: 400px;
         height: 320px;
         object-fit: cover;
     }
 
-    .offerInfo{
+    .offerInfo {
         padding: 0 50px 0 32px;
         height: 320px;
         gap: 8px;
     }
 
-    .offerText{
+    .offerText {
         gap: 8px;
     }
 
-    .offerTitle{
+    .offerTitle {
         font-size: 14px;
     }
 
-    .offerMainInfo{
+    .offerMainInfo {
         font-size: 30px;
     }
 
-    .offerSecInfo{
+    .offerSecInfo {
         font-size: 12px;
     }
 
-    .offerTimerTitle{
+    .offerTimerTitle {
         font-size: 14px;
     }
 
     /* на подписях к таймеру есть проблема - подписи под цифрами таймера сместились. нужно будет переверстать полностью верстку таймера, ибо трабл не решить быстро, тут переписывать нужно */
-    .offerTimerNum{
+    .offerTimerNum {
         font-size: 24px;
     }
 
-    .offerTimerElementBackground{
+    .offerTimerElementBackground {
         height: 40px;
         width: 40px;
     }
 
-    .connectWithUsCont{
+    .connectWithUsCont {
         box-sizing: border-box;
         padding: 50px 60px;
         max-width: 744px;
     }
 
-    .connectLinkContainer{
+    .connectLinkContainer {
         width: 214px;
     }
 
-    .connectLinkSvg{
+    .connectLinkSvg {
         height: 50px;
         width: 50px;
         border-radius: 16px;
     }
 
-    .size25_25{
+    .size25_25 {
         width: 25px;
         height: 25px;
     }
 
-    .size13_25{
+    .size13_25 {
         width: 13px;
         height: 25px;
     }
 
-    .size25_20{
+    .size25_20 {
         width: 25px;
         height: 20px;
     }
 
 
     /* есть нюанс с адаптивностью футтера, но возможно так и было задумано дизайнером*/
-    .footer{
+    .footer {
         max-width: 744px;
         width: 100%;
         padding: 40px 46px;
     }
 
-    .footerContent{
+    .footerContent {
         grid-template-columns: 183px 110px 108px 160px;
         max-width: 651px;
         gap: 28px;
     }
 
-    .footerTitle{
+    .footerTitle {
         font-size: 22px;
     }
 
-    .footerTitleText{
+    .footerTitleText {
         font-size: 13px;
     }
 
-    .footerLinksContainer{
+    .footerLinksContainer {
         gap: 8px;
     }
 
-    .footerLine{
-        width: 651px; 
+    .footerLine {
+        width: 651px;
     }
 }
 
 @media (max-width: 745px) {
-    .header{
+    .header {
         padding: 0 24px;
     }
 
-    .displayNoneResp745{
+    .displayNoneResp745 {
         display: none;
     }
 
-    .panelContainer{
+    .panelContainer {
         max-width: 120px;
     }
 
-    .accountContainerSmallDevice{
+    .accountContainerSmallDevice {
         gap: 16px;
     }
 
@@ -976,7 +1002,7 @@ body{
         width: 100%;
     }
 
-    .categories{
+    .categories {
         padding: 20px 23px;
         height: 606px;
         max-width: 372px;
@@ -984,16 +1010,16 @@ body{
         gap: 24px;
     }
 
-    .shopTitleContainer{
+    .shopTitleContainer {
         height: 30px;
         padding: 0 0 0 13px;
     }
 
-    .greenLine{
+    .greenLine {
         height: 25px;
     }
 
-    .shopTitleText{
+    .shopTitleText {
         font-size: 18px;
     }
 
@@ -1004,35 +1030,35 @@ body{
         row-gap: 24px;
     }
 
-    .shopContainer{
+    .shopContainer {
         padding: 20px 23px;
         height: 696px;
         width: 373px;
         gap: 24px;
     }
 
-    .shopNavigationLink{
+    .shopNavigationLink {
         font-size: 14px;
     }
 
     /* пока что навигация по товарам остается такой */
 
-    .cardContainer{
+    .cardContainer {
         height: 272px;
         width: 150px;
         gap: 4px;
     }
 
-    .cardTagDiscountLikePanel{
+    .cardTagDiscountLikePanel {
         gap: 25px;
         padding: 8px 8px 0 8px;
     }
 
-    .cardTagDiscountContainer{
+    .cardTagDiscountContainer {
         grid-template-columns: 85px;
     }
 
-    .cardDiscount{
+    .cardDiscount {
         width: 30px;
         height: 30px;
         font-size: 9px;
@@ -1044,23 +1070,23 @@ body{
     }
 
 
-    .cardTag{
+    .cardTag {
         height: 24px;
         width: 85px;
     }
 
-    .cardImgContainer{
+    .cardImgContainer {
         height: 200px;
         width: 150px;
         padding: 29px 15px;
     }
 
-    .cardImg{
+    .cardImg {
         height: 140px;
         width: 120px;
     }
 
-    .cardInfoContainer{
+    .cardInfoContainer {
         gap: 2px;
     }
 
@@ -1069,33 +1095,33 @@ body{
         line-height: 16px;
     }
 
-    .cardCurrentPrice{
+    .cardCurrentPrice {
         font-size: 10px;
     }
 
-    .cardOriginalPrise{
+    .cardOriginalPrise {
         font-size: 10px;
     }
 
-    .offer{
+    .offer {
         height: 640px;
         max-width: 375px;
         width: 100%;
         flex-direction: column;
     }
 
-    .offerImg{
+    .offerImg {
         max-width: 375px;
         width: 100%;
         height: 320px;
     }
 
-    .offerInfo{
+    .offerInfo {
         padding: 0 50px;
         box-sizing: border-box;
     }
-    
-    .connectWithUsCont{
+
+    .connectWithUsCont {
         flex-direction: column;
         justify-content: center;
         gap: 35px;
@@ -1103,52 +1129,52 @@ body{
         width: 375px;
     }
 
-    .connectHelpPanel{
+    .connectHelpPanel {
         width: 327px;
     }
 
-    .connectHelpButton{
+    .connectHelpButton {
         margin-left: 18px;
     }
 
-    .footer{
+    .footer {
         max-width: 375px;
         width: 100%;
         padding: 30px 24px;
         gap: 40px;
     }
 
-    .footerContent{
+    .footerContent {
         grid-template-columns: 1fr;
         gap: 24px;
     }
 
-    .footerTitle{
+    .footerTitle {
         font-size: 20px;
     }
 
-    .footerTitleContainer{
+    .footerTitleContainer {
         gap: 16px;
     }
 
-    .footerTitleText{
+    .footerTitleText {
         margin-bottom: 8px;
         line-height: 28px;
     }
 
-    .footerLinksGridContainer{
+    .footerLinksGridContainer {
         gap: 16px;
     }
 
-    .footerLinksContainer{
+    .footerLinksContainer {
         gap: 8px;
     }
 
-    .footerLinksAddressContainer{
+    .footerLinksAddressContainer {
         gap: 8px;
     }
 
-    .footerLine{
+    .footerLine {
         width: 327px;
     }
 
@@ -1162,21 +1188,17 @@ body{
         max-width: 327px;
     }
 
-    .footerPaymentMethods{
+    .footerPaymentMethods {
         gap: 4.8px;
     }
 
-    .marginBot24{
+    .marginBot24 {
         margin-bottom: 24px;
     }
 
-    .fLdisplayNone{
+    .fLdisplayNone {
         display: block;
     }
+
     /* тут нужно будет доделать скрытие и открытие разделов по нажатию на стрелочки  */
 }
-
-    
-
-
-
