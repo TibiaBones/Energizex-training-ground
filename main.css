@@ -97,6 +97,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative
 }
 
 .bannerImgLink {
@@ -121,6 +122,27 @@ body {
     border-radius: 4px;
 }
 
+.bannerCirclesContainer {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.bannerCircle {
+    width: 15px;
+    height: 15px;
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+.bannerCircleBlack {
+    background-color: var(--text-color);
+}
 
 
 .categories {
@@ -209,19 +231,22 @@ body {
     background-color: var(--button-green);
     border-width: 0;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.shopButton:hover{
+.shopButton:hover {
     cursor: pointer;
 }
 
-.shopButtonPrev{
+.shopButtonPrev {
     display: none;
     top: 378px;
     left: 35px;
 }
 
-.shopButtonNext{
+.shopButtonNext {
     top: 378px;
     right: 35px;
 }
@@ -764,19 +789,28 @@ body {
         width: 100%;
         height: 340px;
         padding: 25px 0;
-
+        position: relative;
     }
 
     .bannerImgLink {
         height: 270px;
         width: 624px;
-
     }
 
     .bannerImg {
         height: 270px;
         max-width: 624px;
         width: 100%;
+    }
+
+    .bannerCirclesContainer {
+        gap: 8px;
+        bottom: 45px;
+    }
+
+    .bannerCircle {
+        width: 12px;
+        height: 12px;
     }
 
     .categories {
@@ -811,6 +845,26 @@ body {
         max-width: 700px;
         width: 100%;
         padding: 30px 38px;
+    }
+
+    .shopButton {
+        width: 24px;
+        height: 24px;
+    }
+
+    .shopButtonPrev {
+        top: 310px;
+        left: 6px;
+    }
+
+    .shopButtonNext {
+        top: 310px;
+        right: 6px;
+    }
+
+    .shopIcon {
+        width: 14px;
+        height: 14px;
     }
 
     .cardContainer {
@@ -987,6 +1041,7 @@ body {
         height: 176px;
         box-sizing: border-box;
         padding: 10px 0;
+        position: relative;
     }
 
     /* посмотреть варианты решения проблемы с обрезанием фотки */
@@ -1000,6 +1055,16 @@ body {
         height: 156px;
         max-width: 327px;
         width: 100%;
+    }
+
+    .bannerCirclesContainer {
+        gap: 4px;
+        bottom: 22px;
+    }
+
+    .bannerCircle {
+        width: 9px;
+        height: 9px;
     }
 
     .categories {
@@ -1035,6 +1100,16 @@ body {
         height: 696px;
         width: 373px;
         gap: 24px;
+    }
+
+    .shopButtonPrev {
+        top: 24px;
+        left: 292px;
+    }
+
+    .shopButtonNext {
+        top: 24px;
+        right: 24px;
     }
 
     .shopNavigationLink {
