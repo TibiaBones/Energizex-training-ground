@@ -359,6 +359,26 @@ body {
     background-color: var(--button-green);
     position: absolute;
     bottom: 124px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.cardAddButtonText{
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--white);
+}
+
+.cardContainer:hover .cardAddButton{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .cardImgContainer {
