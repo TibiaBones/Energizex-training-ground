@@ -158,6 +158,12 @@ body {
     gap: 32px;
 }
 
+.shopTitleMarkerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .shopTitleContainer {
     display: flex;
     justify-content: flex-start;
@@ -166,6 +172,13 @@ body {
     height: 50px;
     width: 100%;
     box-sizing: border-box;
+}
+
+.shopMarkerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
 .greenLine {

@@ -197,6 +197,15 @@
                 stroke="#191B1E" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round"
                 stroke-linejoin="round" />
         </symbol>
+
+        <symbol id="markerActSvg" viewBox="0 0 17 17" fill="none">
+            <rect x="0.5" y="0.5" width="16" height="16" rx="8" stroke="#141718" stroke-linejoin="bevel" />
+            <ellipse cx="8.49999" cy="8.5" rx="3.99999" ry="4" fill="#141718" />
+        </symbol>
+
+        <symbol id="markerNonActSvg" viewBox="0 0 16 16" fill="none">
+            <ellipse cx="7.99999" cy="8" rx="3.99999" ry="4" fill="#6C7275" />
+        </symbol>
     </svg>
 
     <!-- помимо допила мелочей есть более глобальные вещи на доработку. поведение навигации в товарных секциях, расположение карточек товара там же, кнопка "добавить" в карточках !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
@@ -333,11 +342,29 @@
                 </svg>
             </button>
 
-            <div class="shopTitleContainer">
-                <div class="greenLine"></div>
+            <div class="shopTitleMarkerContainer">
+                <div class="shopTitleContainer">
+                    <div class="greenLine"></div>
 
-                <span class="shopTitleText">Best Seller</span>
+                    <span class="shopTitleText">Best Seller</span>
+                </div>
+
+                <div class="shopMarkerContainer">
+                    <svg width="17" height="17">
+                        <use href="#markerActSvg" />
+                    </svg>
+
+                    <svg width="16" height="16">
+                        <use href="#markerNonActSvg" />
+                    </svg>
+
+                    <svg width="16" height="16">
+                        <use href="#markerNonActSvg" />
+                    </svg>
+                </div>
             </div>
+
+
             <!-- возможно стоит заменить навигацию по ссылкам на дивы или спаны -->
             <div class="shopNavigation">
                 <a class="shopNavigationLink" href="#">Health Food</a>
@@ -480,10 +507,26 @@
                 </svg>
             </button>
 
-            <div class="shopTitleContainer">
-                <div class="greenLine"></div>
+            <div class="shopTitleMarkerContainer">
+                <div class="shopTitleContainer">
+                    <div class="greenLine"></div>
 
-                <span class="shopTitleText">Supplements</span>
+                    <span class="shopTitleText">Supplements</span>
+                </div>
+
+                <div class="shopMarkerContainer">
+                    <svg width="17" height="17">
+                        <use href="#markerActSvg" />
+                    </svg>
+
+                    <svg width="16" height="16">
+                        <use href="#markerNonActSvg" />
+                    </svg>
+
+                    <svg width="16" height="16">
+                        <use href="#markerNonActSvg" />
+                    </svg>
+                </div>
             </div>
 
             <div class="shopNavigation">
@@ -623,11 +666,28 @@
                 </svg>
             </button>
 
-            <div class="shopTitleContainer">
-                <div class="greenLine"></div>
+            <div class="shopTitleMarkerContainer">
+                <div class="shopTitleContainer">
+                    <div class="greenLine"></div>
 
-                <span class="shopTitleText">New Launched Products</span>
+                    <span class="shopTitleText">New Launched Products</span>
+                </div>
+
+                <div class="shopMarkerContainer">
+                    <svg width="17" height="17">
+                        <use href="#markerActSvg" />
+                    </svg>
+
+                    <svg width="16" height="16">
+                        <use href="#markerNonActSvg" />
+                    </svg>
+
+                    <svg width="16" height="16">
+                        <use href="#markerNonActSvg" />
+                    </svg>
+                </div>
             </div>
+            
 
             <div class="shopCardContainers">
                 <div class="cardContainer">
