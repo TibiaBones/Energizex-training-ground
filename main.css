@@ -254,6 +254,7 @@ body {
 .shopNavigation {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -262,6 +263,8 @@ body {
     font-weight: 500;
     text-decoration: none;
     color: var(--black);
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .shopNavigationLink:hover {
@@ -1148,11 +1151,22 @@ body {
         right: 24px;
     }
 
+    .shopNavigation{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; 
+        scrollbar-width: none;        /*убрать полосу прокрутки, но она останется функциональной (походу это работает только с файерфоксом) */
+    }
+
     .shopNavigationLink {
         font-size: 14px;
     }
 
-    /* пока что навигация по товарам остается такой */
+    .shopNavigation::-webkit-scrollbar{
+        display: none;
+    }
+    /* почитать подробнее про псевдоэлементы */
+
 
     .cardContainer {
         height: 272px;
