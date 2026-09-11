@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap&subset=cyrillic"
         rel="stylesheet">
+    <script defer src="main.js"></script>
 </head>
 
 <body>
@@ -330,13 +331,13 @@
         <!-- в разделе магазина прикрутить все эффекты, ховер-фокус на ссылках навигации, слайдеры+, точки страничек, кнопки при наведении на карточку товара -->
 
         <section class="shopContainer">
-            <button class="shopButton shopButtonPrev">
+            <button class="shopButton shopButtonPrev" id="block1-buttonPrev">
                 <svg class="shopIcon" width="24" height="24">
                     <use href="#arrowLSvg" />
                 </svg>
             </button>
 
-            <button class="shopButton shopButtonNext">
+            <button class="shopButton shopButtonNext" id="block1-buttonNext">
                 <svg class="shopIcon" width="24" height="24">
                     <use href="#arrowRSvg" />
                 </svg>
@@ -377,8 +378,11 @@
 
             <!-- для карточек товара в заданных добавить плашку "бестселлер"+, значки лайка+, кнопку "добавить"(!), плашку скидки+, изменять оценку(!) -->
 
-            <div class="shopCardContainers">
-                <div class="cardContainer">
+            <div class="shopCardContainers" id="block1-carousel">
+                <div class="shopCardCarousel-track" id="block1-track">
+
+                </div>
+                <!-- <div class="cardContainer">
                     <div class="cardTagDiscountLikePanel">
                         <div class="cardTagDiscountContainer">
                             <span class="cardTag">bestseller</span>
@@ -490,7 +494,7 @@
                                     style="text-decoration: line-through;">2419.00</span></span>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 

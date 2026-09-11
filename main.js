@@ -230,7 +230,7 @@ function createCarousel(products, containerId, trackId, prevBtnId, nextBtnId, in
     const nextBtn = document.getElementById(nextBtnId);     // кнопка "Вперед"
     const indicator = document.getElementById(indicatorId); // индикатор
 
-    if (!container || !track || !prevBtn || !nextBtn || !indicator) {
+    if (!container || !track || !prevBtn || !nextBtn) {
         console.error('Ошибка: не найден один из элементов карусели', {
             containerId, trackId, prevBtnId, nextBtnId, indicatorId
         });
@@ -259,7 +259,7 @@ function createCarousel(products, containerId, trackId, prevBtnId, nextBtnId, in
             </button>
 
             <div class="cardImgContainer">
-                img src="${item.imgSrc}" alt="${item.name}" class="cardImg" />
+                <img src="${item.imgSrc}" alt="${item.name}" class="cardImg" />
             </div>
 
             <div class="cardInfoContainer">
@@ -308,8 +308,9 @@ function createCarousel(products, containerId, trackId, prevBtnId, nextBtnId, in
         return;
     }
 
-    const cardWidth = firstCard.offsetWidth + parseFloat(getComputedStyle(firstCard).marginRight || 0); //ширина первой карточки = ширина карточки offsetWidth + ширина марджинов 
-
+    const cardWidth = firstCard.offsetWidth;
+    const gap = parseFloat(getComputedStyle(track).gap) || 0;
+    const step = cardWidth + gap;
     const maxIndex = Math.max(0, totalItems - visibleCount); // максимальный индекс, наколько можно сдвинуться чтобы не уехать за экран 
 
     //функция отрисовки и обновления карусели
@@ -321,7 +322,7 @@ function createCarousel(products, containerId, trackId, prevBtnId, nextBtnId, in
             track.style.transition = 'transform 0.4s ease';
         }
 
-        track.style.transform = `translateX(-${currentIndex * cardWidth}px` // сдвигаем трек влево 
+        track.style.transform = `translateX(-${currentIndex * cardWidth}px)` // сдвигаем трек влево 
 
         //если буду делать индикатор, то нужно его обновление вставить тут
 
@@ -332,7 +333,7 @@ function createCarousel(products, containerId, trackId, prevBtnId, nextBtnId, in
         //вот тут в дальнейшем разобраться с анимацией
         // Если анимацию отключали – включаем обратно для следующих кликов
         if (!animate) {
-            // Принудительно пересчитываем стили, чтобы transition применился
+            // Принудительно пересчитываем стили, чтобы transition применился (нужно из-за встроенного поведения жабаскрипта)
             track.offsetHeight;
             track.style.transition = 'transform 0.4s ease';
         }
@@ -356,10 +357,10 @@ function createCarousel(products, containerId, trackId, prevBtnId, nextBtnId, in
     //Первоначальная отрисовка без анимации
     updateCarousel(false);
 }
-// удалить индикатор из функции (мб нужно будет сделать более примитивный, из дизайна, точечный)
+// индикатор?
 // поправить пути к картинкам, чтобы для наглядности были видны разные карточки. добавить подтягивание этой инфы в верстку
-//!!!!!!!!!!!!! html не связан с js, не расставлены id и не откорректированы стили!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// АЛЕРТ БЛЭД. НЕПРАВИЛЬНО СЧИТАЮТСЯ ШИРИНЫ КАРТОЧЕК И ОТСТУПОВ МЕЖДУ НИМИ!!!
 
-// createCarousel(productsBlock1, 'block1-carousel', 'block1-track', 'block1-prev', 'block1-next', 'block1-indicator', 4);
+createCarousel(bestSellerProducts, 'block1-carousel', 'block1-track', 'block1-buttonPrev', 'block1-buttonNext', 'block1-indicator', 4);
 
 

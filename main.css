@@ -158,7 +158,7 @@ body {
     gap: 32px;
 }
 
-.shopTitleMarkerContainer{
+.shopTitleMarkerContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -174,7 +174,7 @@ body {
     box-sizing: border-box;
 }
 
-.shopMarkerContainer{
+.shopMarkerContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,6 +234,7 @@ body {
     align-content: start;
     gap: 32px;
     position: relative;
+
 }
 
 .shopButton {
@@ -299,6 +300,15 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 18px;
+    overflow: hidden;
+    position: relative;
+    width: 100%; 
+}
+
+.shopCardCarousel-track {
+    display: flex;
+    transition: transform 0.4s ease;
+    will-change: transform;
 }
 
 .cardContainer {
@@ -366,7 +376,7 @@ body {
     cursor: pointer;
 }
 
-.cardAddButton{
+.cardAddButton {
     max-width: 230px;
     width: 100%;
     height: 46px;
@@ -385,13 +395,13 @@ body {
     pointer-events: none;
 }
 
-.cardAddButtonText{
+.cardAddButtonText {
     font-size: 16px;
     line-height: 28px;
     color: var(--white);
 }
 
-.cardContainer:hover .cardAddButton{
+.cardContainer:hover .cardAddButton {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -939,7 +949,7 @@ body {
         font-size: 12px;
     }
 
-    .cardAddButton{
+    .cardAddButton {
         display: none;
     }
 
@@ -1164,20 +1174,22 @@ body {
         right: 24px;
     }
 
-    .shopNavigation{
+    .shopNavigation {
         flex-wrap: nowrap;
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch; 
-        scrollbar-width: none;        /*убрать полосу прокрутки, но она останется функциональной (походу это работает только с файерфоксом) */
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        /*убрать полосу прокрутки, но она останется функциональной (походу это работает только с файерфоксом) */
     }
 
     .shopNavigationLink {
         font-size: 14px;
     }
 
-    .shopNavigation::-webkit-scrollbar{
+    .shopNavigation::-webkit-scrollbar {
         display: none;
     }
+
     /* почитать подробнее про псевдоэлементы */
 
 
@@ -1202,7 +1214,7 @@ body {
         font-size: 9px;
     }
 
-    .cardAddButton{
+    .cardAddButton {
         display: none;
     }
 
