@@ -156,7 +156,7 @@ const newLaunchedProducts = [
         currentPrice: 2419.00,
         originalPrice: 2419.00,
         discount: '-50%',
-        imgSrc: 'img/shopImg/PasteImage7.png',
+        imgSrc: 'img/shopImg/PasteImage6.png',
         rating: 5
     },
 
@@ -166,7 +166,7 @@ const newLaunchedProducts = [
         currentPrice: 2419.00,
         originalPrice: 2419.00,
         discount: '-50%',
-        imgSrc: 'img/shopImg/PasteImage7.png',
+        imgSrc: 'img/shopImg/PasteImage6.png',
         rating: 5
     },
 
@@ -176,7 +176,7 @@ const newLaunchedProducts = [
         currentPrice: 2419.00,
         originalPrice: 2419.00,
         discount: '-50%',
-        imgSrc: 'img/shopImg/PasteImage7.png',
+        imgSrc: 'img/shopImg/PasteImage6.png',
         rating: 5
     },
 
@@ -186,7 +186,7 @@ const newLaunchedProducts = [
         currentPrice: 2419.00,
         originalPrice: 2419.00,
         discount: '-50%',
-        imgSrc: 'img/shopImg/PasteImage7.png',
+        imgSrc: 'img/shopImg/PasteImage6.png',
         rating: 5
     },
 
@@ -196,7 +196,7 @@ const newLaunchedProducts = [
         currentPrice: 2419.00,
         originalPrice: 2419.00,
         discount: '-50%',
-        imgSrc: 'img/shopImg/PasteImage7.png',
+        imgSrc: 'img/shopImg/PasteImage6.png',
         rating: 5
     },
 
@@ -206,7 +206,7 @@ const newLaunchedProducts = [
         currentPrice: 2419.00,
         originalPrice: 2419.00,
         discount: '-50%',
-        imgSrc: 'img/shopImg/PasteImage7.png',
+        imgSrc: 'img/shopImg/PasteImage6.png',
         rating: 5
     },
 
@@ -216,7 +216,7 @@ const newLaunchedProducts = [
         currentPrice: 2419.00,
         originalPrice: 2419.00,
         discount: '-50%',
-        imgSrc: 'img/shopImg/PasteImage7.png',
+        imgSrc: 'img/shopImg/PasteImage6.png',
         rating: 5
     },
 ];
@@ -375,5 +375,8 @@ function createCarousel(products, containerId, trackId, prevBtnId, nextBtnId, in
 // АЛЕРТ БЛЭД. НЕПРАВИЛЬНО СЧИТАЮТСЯ ШИРИНЫ КАРТОЧЕК И ОТСТУПОВ МЕЖДУ НИМИ!!!
 
 createCarousel(bestSellerProducts, 'block1-carousel', 'block1-track', 'block1-buttonPrev', 'block1-buttonNext', 'block1-indicator', 4);
+createCarousel(supplementsProducts, 'block2-carousel', 'block2-track', 'block2-buttonPrev', 'block2-buttonNext', 'block2-indicator', 4);
+createCarousel(newLaunchedProducts, 'block3-carousel', 'block3-track', 'block3-buttonPrev', 'block3-buttonNext', 'block3-indicator', 4);
+
 
 
