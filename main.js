@@ -2,71 +2,78 @@ const bestSellerProducts = [
     {
         id: 1,
         name: 'Nutrabey Gold 100% Whey Protein Concentrate',
-        currentPrice: 2419.00,
-        originalPrice: 2419.00,
+        currentPrice: 1210.00,
+        originalPrice: 2420.00,
         discount: '-50%',
         imgSrc: 'img/shopImg/PasteImage1.png',
-        rating: 5
+        rating: 5,
+        storeSection: 'bestseller'
     },
 
     {
         id: 2,
         name: 'Nutrabey Gold 100% Whey Protein Concentrate',
-        currentPrice: 2419.00,
-        originalPrice: 2419.00,
+        currentPrice: 1210.00,
+        originalPrice: 2420.00,
         discount: '-50%',
         imgSrc: 'img/shopImg/PasteImage1.png',
-        rating: 5
+        rating: 5,
+        storeSection: 'bestseller'
     },
 
     {
         id: 3,
         name: 'Nutrabey Gold 100% Whey Protein Concentrate',
-        currentPrice: 2419.00,
-        originalPrice: 2419.00,
+        currentPrice: 1210.00,
+        originalPrice: 2420.00,
         discount: '-50%',
         imgSrc: 'img/shopImg/PasteImage1.png',
-        rating: 5
+        rating: 5,
+        storeSection: 'bestseller'
     },
 
     {
         id: 4,
         name: 'Nutrabey Gold 100% Whey Protein Concentrate',
-        currentPrice: 2419.00,
-        originalPrice: 2419.00,
+        currentPrice: 1210.00,
+        originalPrice: 2420.00,
         discount: '-50%',
         imgSrc: 'img/shopImg/PasteImage1.png',
-        rating: 5
+        rating: 5,
+        storeSection: 'bestseller'
     },
 
     {
         id: 5,
         name: 'Nutrabey Gold 100% Whey Protein Concentrate',
-        currentPrice: 2419.00,
-        originalPrice: 2419.00,
+        currentPrice: 1210.00,
+        originalPrice: 2420.00,
         discount: '-50%',
         imgSrc: 'img/shopImg/PasteImage1.png',
-        rating: 5
+        rating: 5,
+        storeSection: 'bestseller'
     },
 
     {
         id: 6,
         name: 'Nutrabey Gold 100% Whey Protein Concentrate',
-        currentPrice: 2419.00,
-        originalPrice: 2419.00,
+        currentPrice: 1210.00,
+        originalPrice: 2420.00,
         discount: '-50%',
         imgSrc: 'img/shopImg/PasteImage1.png',
-        rating: 5
+        rating: 5,
+        storeSection: 'bestseller'
     },
 
     {
         id: 7,
         name: 'Nutrabey Gold 100% Whey Protein Concentrate',
-        currentPrice: 2419.00,
-        originalPrice: 2419.00,
+        currentPrice: 1210.00,
+        originalPrice: 2420.00,
         discount: '-50%',
         imgSrc: 'img/shopImg/PasteImage1.png',
-        rating: 5
+        rating: 5,
+        storeSection: 'bestseller'
     },
 ]
 
@@ -229,6 +236,7 @@ function createCarousel(products, containerId, trackId, prevBtnId, nextBtnId, in
     const prevBtn = document.getElementById(prevBtnId);     // кнопка "Назад"
     const nextBtn = document.getElementById(nextBtnId);     // кнопка "Вперед"
     const indicator = document.getElementById(indicatorId); // индикатор
+    // !!!!!!!!!!!!!!!!!!!!реализовать индикатор, продумать как можно изменить расстояние, на которое отматывается трэк при нажатии на кнопку!!!!!!!!!!!!!!!!
 
     if (!container || !track || !prevBtn || !nextBtn) {
         console.error('Ошибка: не найден один из элементов карусели', {
@@ -236,14 +244,19 @@ function createCarousel(products, containerId, trackId, prevBtnId, nextBtnId, in
         });
         return;
     }
+    
 
     track.innerHTML = products.map(item => {
+        // проверка на наличие скидки (убедиться что нынешняя цена не равняется первоначальной, убеждаемся что есть скидка)
         const hasDiscount = item.discount && item.originalPrice && item.originalPrice !== item.currentPrice
-
+        // убеждаемся что товар из категории bestseller, нужно логическое значение
+        const sectionTest = item.storeSection == 'bestseller'; 
+        
         return `
         <div class="cardContainer">
             <div class="cardTagDiscountLikePanel" data-product-id="${item.id}">
                 <div class="cardTagDiscountContainer">
+                    ${sectionTest ? `<span class="cardTag">bestseller</span>` : ''}
                     ${hasDiscount ? `<div class="cardDiscount">${item.discount}</div>` : ''}
                 </div>
 

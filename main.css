@@ -296,6 +296,10 @@ body {
 }
 
 .shopCardContainers {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
     overflow: hidden;
     position: relative;
     width: 100%; 
