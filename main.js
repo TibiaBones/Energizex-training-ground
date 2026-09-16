@@ -304,7 +304,7 @@ function createCarousel(products, containerId, trackId, prevBtnId, nextBtnId, in
                     <span class="cardCurrentPrice">&#8377 ${item.currentPrice.toFixed(2)}</span>
 
                     ${hasDiscount ? `<span class="cardOriginalPrise">&#8377 <span
-                                    style="text-decoration: line-through;">${item.currentPrice.toFixed(2)}</span></span>` : ''}
+                                    style="text-decoration: line-through;">${item.originalPrice.toFixed(2)}</span></span>` : ''}
                 </div>
             </div>
         </div>                   
