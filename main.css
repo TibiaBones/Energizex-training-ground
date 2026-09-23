@@ -223,7 +223,6 @@ body {
 }
 
 .shopContainer {
-    height: 689px;
     max-width: 1400px;
     width: 100%;
     background-color: var(--white);
@@ -312,6 +311,14 @@ body {
     gap: 18px;
     transition: transform 0.4s ease;
     will-change: transform;
+}
+
+.shopMainPageContainers{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
 }
 
 .cardContainer {
